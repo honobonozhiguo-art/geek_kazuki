@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}{{ course.name }}{% endblock %}
+
+{% block content %}
+
+  <article class="card">
+
+    <header class="card-head">
+      <h1>{{ course.name }}</h1>
+      <p class="card-lead">{{ course.description }}</p>
+
+      <div class="badges">
+        {% if course.indoor_only %}
+          <span class="badge">全部屋内</span>
+        {% endif %}
+
+        {% if course.solo_friendly %}
+          <span class="badge">1人向け</span>
+        {% endif %}
+
+        <span class="badge">
+          {{ "雨の日" if weather == "rainy" else "晴れの日" }}
+        </span>
+      </div>
+    </header>
+
+    <dl class="stats">
+      <div>
+        <dt>所要</dt>
+        <dd>{{ course.total_duration_min }}分</dd>
+      </div>
+
+      <div>
+        <dt>費用目安</dt>
+        <dd>{{ course.total_cost_yen }}円</dd>
+      </div>
+
+      <div>
+        <dt>エリア</dt>
+        <dd>{{ course.area }}</dd>
+      </div>
+    </dl>
+
+    <ol class="timeline">
+      {% for spot in course.spots %}
+        <li class="timeline-item">
+
+          <div class="timeline-time">
+            {{ spot.time }}
+          </div>
+
+          <div class="timeline-body">
+            <div class="timeline-name">{{ spot.name }}</div>
+            <div class="timeline-meta">{{ spot.stay_min }}分</div>
+            <div class="timeline-note">{{ spot.note }}</div>
+          </div>
+
+        </li>
+      {% endfor %}
+    </ol>
+
+    {% if used_ai %}
+      <p class="ai-note">
+        コース名は AI が今日の気分に合わせて生成しました
+      </p>
+    {% endif %}
+
+  </article>
+
+  <p class="back">
+    <a href="/">別の条件で試す</a>
+  </p>
+{% if remaining > 0 %}
+  <form action="/suggest" method="post" class="another">
+    <input type="hidden" name="free_text" value="{{ free_text }}">
+    <input type="hidden" name="duration" value="{{ duration }}">
+    <input type="hidden" name="weather" value="{{ weather }}">
+    <input type="hidden" name="excluded" value="{{ next_excluded }}">
+
+    <button type="submit" class="button-secondary">
+      別の案（あと{{ remaining }}回）
+    </button>
+  </form>
+{% else %}
+  <p class="another-limit">別の案はここまで。決めてください。</p>
+{% endif %}
+{% endblock %}

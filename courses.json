@@ -1,0 +1,159 @@
+[
+  {
+    "id": "umeda_book_cafe",
+    "name": "梅田で本とカフェをゆっくり",
+    "description": "本屋とカフェ、雑貨をゆっくり楽しむ半日コース",
+    "area": "梅田",
+    "total_duration_min": 225,
+    "total_cost_yen": 2500,
+    "indoor_only": true,
+    "solo_friendly": true,
+    "energy_level": "low",
+    "spots": [
+        {
+            "time": "13:00",
+        "name": "MARUZEN & ジュンク堂書店　梅田店",
+        "stay_min": 90,
+        "note": "大型書店で気になる本をゆっくり探す"
+      },
+      {
+        "time": "14:40",
+        "name": "ブルーボトルコーヒー　梅田茶屋町カフェ",
+        "stay_min": 60,
+        "note": "買った本を読みながらゆっくり休憩する"
+      },
+      {
+        "time": "16:00",
+        "name": "Standard Products 梅田エスト店",
+        "stay_min": 45,
+        "note": "生活雑貨を見ながら気分転換をする"
+      }
+    ]
+  },
+  {
+     "id": "umeda_park_cafe",
+    "name": "うめきたで散歩とカフェ",
+    "description": "外の空気を楽しみながら、カフェと買い物を楽しむ半日コース",
+    "area": "梅田",
+    "total_duration_min": 240,
+    "total_cost_yen": 2500,
+    "indoor_only": false,
+    "solo_friendly": true,
+    "energy_level": "mid",
+    "spots": [
+      {
+            "time": "13:00",
+        "name": "うめきた公園",
+        "stay_min": 75,
+        "note": "芝生や水辺を眺めながらゆっくり散歩する"
+      },
+      {
+        "time": "14:25",
+        "name": "LOHE COFFEE & COFFEE COCKTAIL 大阪梅田店",
+        "stay_min": 60,
+        "note": "公園の近くでコーヒーを飲みながら休憩する"
+      },
+      {
+        "time": "15:40",
+        "name": "グランフロント大阪",
+        "stay_min": 90,
+        "note": "館内を見ながら買い物や散策を楽しむ"
+      }
+
+    ]
+  },
+   {
+     "id": "nakanoshima_art_cafe",
+    "name": "中之島でアートを楽しむ午後",
+    "description": "美術館と雑貨、カフェを屋内でゆっくり楽しむ半日コース",
+    "area": "中之島",
+    "total_duration_min": 210,
+    "total_cost_yen": 3000,
+    "indoor_only": true,
+    "solo_friendly": true,
+    "energy_level": "mid",
+    "spots": [
+      {
+            "time": "13:00",
+        "name": "大阪中之島美術館",
+        "stay_min": 120,
+        "note": "展示を自分のペースでゆっくり鑑賞する"
+      },
+      {
+        "time": "15:00",
+        "name": "dot to dot today",
+        "stay_min": 30,
+        "note": "美術館内の雑貨やグッズを見て楽しむ"
+      },
+      {
+        "time": "15:30",
+        "name": "ミュゼカラト",
+        "stay_min": 60,
+        "note": "美術館１階のカフェで余韻を楽しみながら休憩する"
+      }
+    ]
+    },
+    {
+      "id": "umeda_food_cafe_",
+    "name": "梅田を歩いて食べて楽しむ",
+    "description": "梅田＋散策半日コース",
+    "area": "梅田",
+    "total_duration_min": 200,
+    "total_cost_yen": 3000,
+    "indoor_only": false,
+    "solo_friendly": true,
+    "energy_level": "high",
+    "spots": [
+      {
+            "time": "13:00",
+        "name": "阪神梅田本店　スナックパーク",
+        "stay_min": 60,
+        "note": "軽く食べ歩き。いろんな店から選べる。"
+      },
+      {
+        "time": "14:15",
+        "name": "中崎町エリアを散策",
+        "stay_min": 60,
+        "note": "古着・雑貨・街並みを見ながら歩く"
+      },
+       {
+        "time": "15:00",
+        "name": "中崎町のカフェ",
+        "stay_min": 60,
+        "note": "最後はカフェで休憩"
+      }
+    ]
+    },
+ {
+      "id": "umeda_movie_food",
+    "name": "映画とごはんでのんびり梅田",
+    "description": "あまり歩かず、映画と食事をゆっくり楽しむ半日コース",
+    "area": "梅田",
+    "total_duration_min": 315,
+    "total_cost_yen": 4500,
+    "indoor_only": true,
+    "solo_friendly": true,
+    "energy_level": "low",
+    "spots": [
+      {
+            "time": "13:00",
+        "name": "TOHOシネマズ梅田",
+        "stay_min": 150,
+        "note": "映画を見ながらゆっくり過ごす"
+      },
+      {
+        "time": "15:45",
+        "name": "阪急三番街",
+        "stay_min": 75,
+        "note": "映画の後に好きなお店を選んでご飯を楽しむ。"
+      },
+       {
+        "time": "17:15",
+        "name": "ブルーボトルコーヒー　梅田茶屋町カフェ",
+        "stay_min": 60,
+        "note": "最後はカフェで休憩"
+      }
+    ]
+    }
+    ]
+  

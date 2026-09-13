@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}今日、どう過ごす？{% endblock %}
+
+{% block content %}
+
+  <h1>今日、どう過ごす？</h1>
+  <p class="lead">気分と天気を入れるだけ。3タップで半日の予定が決まる。</p>
+
+  <form action="/suggest" method="post" class="form" id="ask-form"></form>
+    <label class="field">
+      <span class="field-label">今の気分</span>
+      <textarea name="free_text" rows="3"
+        placeholder="例: 疲れてる、あんまり歩きたくない"></textarea>
+    </label>
+
+    <fieldset class="field">
+      <legend class="field-label">空いてる時間</legend>
+      <label class="chip">
+        <input type="radio" name="duration" value="short"> 2時間
+      </label>
+      <label class="chip">
+        <input type="radio" name="duration" value="half" checked> 半日
+      </label>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend class="field-label">天気</legend>
+      <label class="chip">
+        <input type="radio" name="weather" value="sunny" checked> 晴れ
+      </label>
+      <label class="chip">
+        <input type="radio" name="weather" value="rainy"> 雨
+      </label>
+    </fieldset>
+
+    <button type="submit" class="button-primary">
+      コースを提案してもらう
+    </button>
+
+  </form>
+
+{% endblock %}
